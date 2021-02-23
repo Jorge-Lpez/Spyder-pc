@@ -65,7 +65,7 @@ img{
 .menu{
     position: fixed;
     width: 100%;
-    background-color: var(--grayPrincipal);
+    /*background-color: var(--grayPrincipal);*/
     z-index: 999;
 }
 
@@ -161,6 +161,7 @@ img{
     background-color: var(--grayInformativo);
     color: var(--blackTexto);
     padding: 5px;
+    border-radius: 10px;
 }
 
 .card h2{
@@ -191,6 +192,37 @@ img{
 }
 
 /*Estilos card reparar*/
+.reparar .title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.reparar .title::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--blackTexto);
+    transform: translateX(-50%);
+}
+
+.reparar .title::after{
+    content: "Conócenos";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    background-color: white;
+    font-size: 20px;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
 .card-reparar-info{
     padding: 40px;
 }
@@ -226,7 +258,7 @@ img{
 
 .services h2{
     text-align: center;
-    padding: 20px 0 10px 0;
+    padding: 80px 0 20px 0;
     font-weight: bold;
     font-size: 2.4em;
 }
@@ -262,7 +294,7 @@ img{
 
 .trabajadores h2{
     margin-top: 60px;
-    padding: 10px;
+    padding: 100px 10px 10px 10px;
     text-align: center;
 }
 .swiper-container {
@@ -322,10 +354,9 @@ img{
     text-align: center;
 }
 /*Formulario contactanos*/
-
 .contactanos h2{
     margin-top: 20px;
-    padding: 20px 0 20px 0;
+    padding: 80px 0 20px 0;
     text-align: center;
 }
 
@@ -346,6 +377,7 @@ img{
     appearance: none;
     border: 1px solid var(--hoverEnlace);
     padding: 15px;
+    border-radius: 10px;
 }
 
 .items-form textarea{
@@ -579,8 +611,6 @@ details ul{
     }
     .flex-formulario{
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
     form{
         flex: 1;
