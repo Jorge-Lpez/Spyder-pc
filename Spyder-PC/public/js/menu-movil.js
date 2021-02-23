@@ -59,11 +59,9 @@ async function submitContacto(e){
     e.preventDefault();
   
     if(!Object.values(datos).every(dato => dato != "")){
-        mostrarAlerta("todos los campos son obligatorios", "error");
+        mostrarAlerta();
         return;
     }
-    
-    mostrarAlerta("Tenemos tus datos pronto nos contactaremos contigo", "complete");
     //console.log(datos);
     await enviandoCorreo(datos);
     reiniciarDatos();
@@ -74,8 +72,13 @@ function obtenerDatos(e){
     datos[e.target.name] = e.target.value;
 }
 
-function mostrarAlerta(mensaje, tipo){
-
+function mostrarAlerta(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Tienes que llenar los datos del formulario',
+        text: 'Ocurrio un error',
+    });
+    /*
     if(!document.querySelector(".error")){
         const alerta = document.createElement("p");
 
@@ -94,7 +97,7 @@ function mostrarAlerta(mensaje, tipo){
         setTimeout(() => {
             alerta.remove();
         }, 3000);
-    }
+    }*/
 }
 
 function reiniciarDatos(){
@@ -161,6 +164,11 @@ async function enviandoCorreo(datos){
     try {
         const url = `https://spyder-pc.herokuapp.com/correo`;
         const resultado =  await axios.post(url, { datos });
+        Swal.fire({
+            icon: 'success',
+            title: 'Correo Enviado',
+            text: 'Pronto nos contactaremos contigo.',
+        });
     } catch (error) {
         console.log(error);
     }

@@ -104,7 +104,7 @@ img{
 .info-principal{
     padding-top: 100px;
     background-color: var(--grayPrincipal);
-    height: 900px;
+    height: 700px;
     color: var(--whiteTexto);
 }
 
@@ -515,6 +515,10 @@ details ul{
 
 
 @media screen and (min-width: 768px){
+
+    .info-principal{
+        height: 500px;
+    }
 
     .contactanos h2{
         margin-top: 10px;
