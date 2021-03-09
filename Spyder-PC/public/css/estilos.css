@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
 *, ::after, ::before{
     margin: 0;
@@ -24,8 +24,10 @@ html{
     /*Nuevos colores*/
     --colorCrimson : #F63636;
     --whiteTexto : white;
+
     /*Letras*/
     --robotoPrincipal : "Roboto", sans-serif;
+
 }
 
 img{
@@ -34,45 +36,14 @@ img{
 
 /*Estilos Generales*/
 .wrapper{
-    padding: 0 10px;
-}
-
-.error{
-    padding: 10px;
-    color: white;
-    background-color: var(--colorCrimson);
-    text-align: center;
-    text-transform: uppercase;
-    border: 1px solid gray;
-}
-
-.complete{
-    padding: 10px;
-    color: white;
-    background-color: var(--botonPrincipal);
-    text-align: center;
-    text-transform: uppercase;
-    border: 1px solid gray;
+    padding: 0 20px;
 }
 /*Menu nav*/
-
-.logo a{
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--whiteTexto);
-    font-weight: 500;
-}
-
 .menu{
-    font-family: var(--robotoPrincipal);
     position: fixed;
     width: 100%;
     /*background-color: var(--grayPrincipal);*/
     z-index: 999;
-}
-
-.menu.stycky{
-    background-color: var(--colorCrimson);
 }
 
 .menu-content{
@@ -81,25 +52,51 @@ img{
     align-items: center;
 }
 
+.menu.stycky{
+    background-color: var(--colorCrimson);
+
+}
+
+.menu.stycky .logo{
+    padding: 20px 0;
+}
+
+.logo{
+    transition: 0.3s ease-in;
+}
+
+.logo a{
+    font-family: var(--robotoPrincipal);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--whiteTexto);
+}
+
 .menu-content ul li{
     display: inline-block;
 }
 
 .menu-content ul li a{
+    font-family: var(--robotoPrincipal);
+    font-weight: 500;
     display: block;
     text-decoration: none;
     color: var(--whiteTexto);
     padding: 10px;
-    font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .menu-btn{
     display: none;
     z-index: 999;
     color: var(--whiteTexto);
-    font-size: 25px;
 }
 
+.menu-btn i{
+    padding: 10px 0;
+    font-size: 20px;
+}
 
 /*Info principal*/
 .info-principal{
@@ -107,6 +104,7 @@ img{
     background-color: var(--grayPrincipal);
     height: 400px;
     color: var(--whiteTexto);
+    font-family: var(--robotoPrincipal);
 }
 
 .img-presentacion{
@@ -121,27 +119,30 @@ img{
 }
 
 .presentacion h1{
-    font-weight: bold;
-    font-size: 1.5em;
+    padding: 10px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
     text-align: center;
-    padding-bottom: 20px;
 }
 
 .presentacion p{
-    font-size: 1.2em;
-    padding-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    text-align: justify;
 }
 
 .presentacion button{
-    padding: 15px;
+    font-family: var(--robotoPrincipal);
+    padding: 10px 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
     text-align: center;
     border: none;
     margin-bottom: 10px;
     color: var(--whiteTexto);
     border: 6px solid var(--botonPrincipal);
     outline: none;
-    font-weight: bold;
-    font-size: 1.1rem;
     background-color: var(--botonPrincipal);
 }
 
@@ -149,11 +150,11 @@ img{
     background: none;
 }
 
-/*Seccion de */
+/*Seccion de autoservicio*/
 
 .card-info{
-    margin: 40px 0;
     font-family: var(--robotoPrincipal);
+    margin: 40px 0;
 }
 
 .card-seccion{
@@ -162,31 +163,34 @@ img{
 }
 
 .card{
+    padding: 15px;
     border: 1px solid var(--hoverEnlace);
     background-color: var(--grayInformativo);
     color: var(--blackTexto);
-    padding: 5px;
     border-radius: 10px;
 }
 
 .card h2{
-    font-weight: 500;
-    padding: 20px 0;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-align: center;
+   padding-bottom: 15px;
 }
 
 .card p{
-    padding-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 .card a{
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 10px 0;
     display: block;
     text-align: center;
     text-decoration: none;
     width: 200px;
     color: var(--whiteTexto);
-    font-size: 1.3em;
     margin: 10px 0;
-    padding: 10px;
     background-color: var(--botonPrincipal);
     border: 4px solid var(--botonPrincipal);
 }
@@ -199,15 +203,14 @@ img{
 /*estilos card services*/
 .services{
     background-color: var(--serviceCard);
-    font-family: var(--robotoPrincipal);
     padding-bottom: 40px;
+    font-family: var(--robotoPrincipal);
 }
 
 .services h2{
-    text-align: center;
+    letter-spacing: 1px;
     padding: 20px 0;
-    font-weight: bold;
-    font-size: 1.8rem;
+    text-align: center;
 }
 
 .card-services{
@@ -215,35 +218,57 @@ img{
     margin-bottom: 30px;
 }
 
-.card-services h2{
-    padding: 10px;
+.card-services h3{
+    letter-spacing: 1px;
+    padding: 10px 0;
+    color: #666867;
 }
 
 .card-services a{
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.4rem;
     color: #0A46E4;
 }
 
-
-.card-imagen-services i{
-    font-size: 25px; 
+.card-services .card-info-services p{
+    letter-spacing: 1px;
+    padding: 10px 0;
+    color: #737473;
 }
 
-.card-services .card-info-services h2{
-    font-size: 25px;
+.card-services .card-info-services h3{
+
+}
+
+.card-services .card-imagen-services .fa-video{
+    color: blue;
+    font-size: 36px;
+}
+
+.card-services .card-imagen-services .fa-tools{
+    color: #E39620;
+    font-size: 36px;
+}
+
+.card-services .card-imagen-services .fa-network-wired{
+    color: #C15216;
+    font-size: 36px;
+}
+
+.card-services .card-imagen-services .fa-memory{
+    color: green;
+    font-size: 36px;
 }
 
 /*Carousel trabajadores*/
 .trabajadores{
+    font-family: var(--robotoPrincipal);
     height: 500px;
     margin: 40px 0;
-    font-family: var(--robotoPrincipal);
 }
 
 .trabajadores h2{
-    padding: 5px 0 40px 0;
+    letter-spacing: 1px;
+    padding: 20px 0;
     text-align: center;
 }
 .swiper-container {
@@ -253,9 +278,7 @@ img{
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
     background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -293,14 +316,21 @@ img{
 }
 
 .trabajador .info-trabajador .team-nombre{
-    margin-top: 20px;
+    margin: 20px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.trabajador .info-trabajador .team-nombre span{
+    margin-left: 5px;
     font-weight: 700;
-    font-size: 25px;
 }
 
 .trabajador .info-trabajador .info-personal{
-    padding: 15px;
+    padding: 15px 0;
     text-align: center;
+    letter-spacing: 1px;
+    text-align: justify;
 }
 
 /*Estilos card reparar*/
@@ -311,10 +341,9 @@ img{
 
 .reparar .title{
     text-align: center;
-    font-weight: 700;
-    font-size: 30px;
-    padding: 20px;
     position: relative;
+    padding: 20px 0;
+    letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
@@ -322,7 +351,7 @@ img{
     content: "";
     position: absolute;
     width: 200px;
-    height: 3px;
+    height: 4px;
     bottom: 0;
     left: 50%;
     background-color: var(--blackTexto);
@@ -332,37 +361,35 @@ img{
 .reparar .title::after{
     content: "Conócenos";
     position: absolute;
-    bottom: -12px;
+    padding: 0 5px;
+    bottom: -7px;
     left: 50%;
+    font-size: 16px;
     background-color: white;
-    font-size: 20px;
-    padding: 5px;
     transform: translateX(-50%);
 }
 
 .card-reparar-info{
-    padding: 40px;
+    padding: 20px 0;
 }
 
 .card-reparar-info h2{
     font-weight: bold;
-    font-size: 1.8rem;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
 }   
 
 .card-reparar-info p{
-    font-size: 1.4em;
-    padding-bottom: 10px;
+    text-align: justify;
+    letter-spacing: 1px;
+    padding: 10px 0;
 }
 
 .card-reparar-info ol{
-    padding-left: 15px;
-}
+    padding-left: 40px;
+    letter-spacing: 1px;
 
-.card-reparar-info ol li{
-    padding: 10px;
-    font-weight: bold;
-    font-size: 1.3em;
 }
 /*Formulario contactanos*/
 
@@ -372,7 +399,7 @@ img{
 }
 
 .contactanos h2{
-    padding-bottom: 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -382,10 +409,9 @@ img{
 }
 
 .items-form label{
+    letter-spacing: 1px;
+    font-weight: 500;
     padding: 10px 0 10px 0;
-    font-weight: bold;
-    color: var(--blackTexto);
-    font-size: 1.2rem;
 }
 
 .items-form input[type="text"], input[type="email"], textarea{
@@ -396,6 +422,13 @@ img{
     border-radius: 10px;
 }
 
+.items-form input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder{
+    font-family: var(--robotoPrincipal);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #B4B6B4;
+}
+
 .items-form textarea{
     margin-bottom: 20px;
     resize: none;
@@ -403,15 +436,18 @@ img{
 
 form input[type="submit"]{
     width: 100%;
+    font-family: var(--robotoPrincipal);
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 500;
     border: none;
     outline: none;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 1.1rem;
     color: var(--whiteTexto);
     border: 1px solid var(--grayInformativo);
     background-color: var(--grayPrincipal);
     border: 4px solid var(--grayPrincipal);
+    margin-bottom: 20px;
 }
 
 form input[type="submit"]:hover{
@@ -419,22 +455,36 @@ form input[type="submit"]:hover{
     color: var(--blackTexto);
 }
 
+/*Terminos y condiciones*/
+.terminos{
+    font-family: var(--robotoPrincipal);
+}
 
-.contactanos .terminos-condiciones {
+.terminos h2{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.terminos-condiciones {
     margin-top: 20px;
 }
 
 .terminos-condiciones .terminos{
-    font-weight: bold;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 10px 0;
     text-align: center;
-    font-size: 20px;
-    padding: 10px;
 }
 
 .terminos-condiciones .informacion-lega{
     text-align: justify;
-    font-size: 15px;
     margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.terminos-iconos{
+    padding: 20px 0;
 }
 
 .terminos-condiciones .terminos-iconos div{
@@ -443,18 +493,13 @@ form input[type="submit"]:hover{
 }
 
 .terminos-condiciones .terminos-iconos div i{
-    font-size: 25px;
     margin-right: 10px;
     margin-bottom: 10px;
+    font-size: 28px;
 }
 
 .terminos-condiciones .terminos-iconos div p{
-    font-size: 1.1em;
-}
-
-.terminos-condiciones .informacion-lega{
-    font-weight: 500;
-    font-size: 20px;
+ letter-spacing: 1px;
 }
 
 
@@ -467,18 +512,31 @@ form input[type="submit"]:hover{
 
 .contenido-footer{
     text-align: center;
+    padding: 20px 0;
 }
 
 details summary{
-    font-weight: bold;
-    font-size: 1.1rem;
+    color: #DEE1DE;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px;
     outline: none;
     border: none;
-    padding: 10px;
 }
 
 details ul{
     list-style: none;
+    color: #D3D5D3;
+    letter-spacing: 1px;
+}
+
+details ul li{
+    padding: 5px;
+}
+
+.footer p{
+    padding: 20px;
+    color: #DEE1DE;
 }
 
 /*Sociales footer*/
@@ -517,7 +575,7 @@ details ul{
     }
 
     .logo{
-        padding: 20px;
+       /* padding: 20px;*/
     }
 
     .menu-btn  i.active::before{
@@ -567,27 +625,108 @@ details ul{
     }
 
     .card-seccion .card h2{
-        font-size: 2em;
+        /*font-size: 2em;*/
         text-align: center;
     }
 
     .card-seccion .card p{
-        font-size: 1.3em;
+       /* font-size: 1.3em;*/
     }
 }
 
 
 @media screen and (min-width: 768px){
 
-    .contactanos h2{
-        margin-top: 10px;
+    /*Barra principal*/
+    .logo{
+        font-size: 18px;
+        padding: 15px 0;
     }
 
+    .menu ul li a{
+        padding: 15px 10px;
+        font-size: 18px;
+    }
+
+    /*Informacion*/
+    .presentacion h1{
+        font-size: 24px;
+    }
+
+    .presentacion p{
+        font-size: 18px;
+    }
+
+    .presentacion button{
+        font-size: 18px;
+    }
+
+    /*Carta tipo de asistencia*/
+    .card p, .card a{
+        font-size: 18px;
+    }
+
+    /*Services*/
+    .card-info-services h3{
+        font-size: 19px;
+    }
+
+    .card-info-services p{
+        font-size: 18px;
+    }
+
+    .services-items .card-services .card-imagen-services i{
+        font-size: 50px;
+    }
+
+    /*Trabajadores*/
+    .info-trabajador .team-nombre{
+        font-size: 18px;
+    }
+
+    .info-trabajador .info-personal{
+        font-size: 18px;
+    }
+
+    /*vision*/
+
+    .card-reparar-info p, .card-reparar-info ol{
+        font-size: 18px;
+    }
+
+    .card-reparar-info ol li{
+        padding: 5px;
+    }
+
+    /*Contactanos*/
+    .flex-formulario form label,  .flex-formulario form input[type="submit"]{
+        font-size: 18px;
+    }
+
+    .flex-formulario .terminos-condiciones{
+        font-size: 18px;
+    }
+
+    /*Terminos*/
+    .terminos{
+        font-size: 18px;
+    }
+
+    /*Footer*/
+    .footer{
+        font-size: 18px;
+    }
+
+    /**/
     /*Estilos en mision y vision*/
     .card-info-reparar{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .card-info-reparar .card-reparar-info{
+        padding: 15px;
     }
 
     .card-reparar-imagen{
@@ -609,18 +748,6 @@ details ul{
         column-gap: 10px;
     }
 
-    .card-services .card-info-services h2{
-        font-size: 25px;
-    }
-
-    .card-services .card-imagen-services i {
-        font-size: 40px;
-    }
-
-    .card-services .card-info-services p{
-        font-size: 1.5em;
-    }
-
     /*Estilos carousel empleados*/
     .carousel-empleados{
         display: grid;
@@ -630,10 +757,6 @@ details ul{
     }
 
     /*Estilos footer*/
-    details summary{
-        list-style: none;
-        appearance: none;
-    }
 
     .contenido-footer{
         display: grid;
@@ -642,12 +765,14 @@ details ul{
     }
     .flex-formulario{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     form{
         flex: 1;
     }
     
-    .terminos-condiciones{
+    .img-form{
         flex: 1;
         margin-left: 40px;
     }

@@ -75,29 +75,10 @@ function obtenerDatos(e){
 function mostrarAlerta(){
     Swal.fire({
         icon: 'error',
-        title: 'Tienes que llenar los datos del formulario',
-        text: 'Ocurrio un error',
+        title: 'Error, Formulario incompleto',
+        text: 'Todos los campos son obligatorios',
+        confirmButtonText: `Aceptar`,
     });
-    /*
-    if(!document.querySelector(".error")){
-        const alerta = document.createElement("p");
-
-        if(tipo === "error"){
-            alerta.classList.add("error");
-        }else{
-            alerta.classList.add("complete");
-        }
-
-        alerta.textContent = mensaje;
-
-        const contactanos = document.querySelector(".contactanos");
-
-        contactanos.insertBefore(alerta, document.querySelector(".contactanos .flex-formulario"));
-
-        setTimeout(() => {
-            alerta.remove();
-        }, 3000);
-    }*/
 }
 
 function reiniciarDatos(){
@@ -166,6 +147,7 @@ async function enviandoCorreo(datos){
             icon: 'success',
             title: 'Correo Enviado',
             text: 'Pronto nos contactaremos contigo.',
+            confirmButtonText: `Aceptar`
         });
         const url = `https://spyder-pc.herokuapp.com/correo`;
         const resultado =  await axios.post(url, { datos });
