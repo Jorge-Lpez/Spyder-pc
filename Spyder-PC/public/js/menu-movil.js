@@ -152,7 +152,7 @@ let swiper = new Swiper('.swiper-container', {
 /*Cambiar color del menu*/
 
 function cambiarColor(){
-    if(window.scrollY > 100){
+    if(window.scrollY > 20){
         document.querySelector(".menu").classList.add("stycky");
     }else{
         document.querySelector(".menu").classList.remove("stycky");
