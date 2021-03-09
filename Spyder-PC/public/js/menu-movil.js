@@ -63,9 +63,9 @@ async function submitContacto(e){
         return;
     }
     //console.log(datos);
+    formulario.reset();
     await enviandoCorreo(datos);
     reiniciarDatos();
-    formulario.reset();
 }
 
 function obtenerDatos(e){
@@ -162,13 +162,13 @@ function cambiarColor(){
 
 async function enviandoCorreo(datos){
     try {
-        const url = `https://spyder-pc.herokuapp.com/correo`;
-        const resultado =  await axios.post(url, { datos });
         Swal.fire({
             icon: 'success',
             title: 'Correo Enviado',
             text: 'Pronto nos contactaremos contigo.',
         });
+        const url = `https://spyder-pc.herokuapp.com/correo`;
+        const resultado =  await axios.post(url, { datos });
     } catch (error) {
         console.log(error);
     }
