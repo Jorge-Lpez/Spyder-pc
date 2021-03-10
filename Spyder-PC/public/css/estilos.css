@@ -551,10 +551,10 @@ details ul li{
     padding: 5px;
 }
 
-.fa-facebook-square{ color: var(--hoverEnlace); }
+.fa-facebook-square{ color: #139EF8;}
 .fa-instagram{ color: var(--hoverEnlace); }
 .fa-youtube{ color: var(--hoverEnlace); }
-.fa-whatsapp-square{ color:var(--hoverEnlace); }
+.fa-whatsapp-square{ color: #00E676; }
 
 .footer .contenedor p{
     margin-top: 10px;
