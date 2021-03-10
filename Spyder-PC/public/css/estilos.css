@@ -42,8 +42,8 @@ img{
 .menu{
     position: fixed;
     width: 100%;
-    /*background-color: var(--grayPrincipal);*/
     z-index: 999;
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .menu-content{
@@ -98,42 +98,42 @@ img{
     font-size: 20px;
 }
 
-/*Info principal*/
-.info-principal{
-    padding-top: 100px;
-    background-color: var(--grayPrincipal);
-    height: 400px;
-    color: var(--whiteTexto);
+/*Info-principal y banner*/
+.banner{
     font-family: var(--robotoPrincipal);
-}
-
-.img-presentacion{
-    width: 200px;
-    margin: auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    background-image: url("../img/principal.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    min-height: 500px;
+    height: 100vh;
 }
 
-.img-presentacion img{
-    width: 150px;
+.presentacion{
+    max-width: 800px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .presentacion h1{
-    padding: 10px 0;
-    font-weight: 700;
-    letter-spacing: 1px;
     text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+    color: white;
 }
 
 .presentacion p{
-    font-weight: 400;
+    color: white;
     letter-spacing: 1px;
     padding: 10px 0;
-    text-align: justify;
 }
 
 .presentacion button{
     font-family: var(--robotoPrincipal);
+    font-size: 16px;
     padding: 10px 5px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -141,20 +141,24 @@ img{
     border: none;
     margin-bottom: 10px;
     color: var(--whiteTexto);
-    border: 6px solid var(--botonPrincipal);
     outline: none;
-    background-color: var(--botonPrincipal);
+    background-color: var(--grayPrincipal);
+    border: 2px solid var(--grayPrincipal);
 }
 
 .presentacion button:hover{
     background: none;
 }
-
 /*Seccion de autoservicio*/
 
 .card-info{
     font-family: var(--robotoPrincipal);
     margin: 40px 0;
+}
+
+.card-info h2{
+    text-align: center;
+    margin: 20px 0;
 }
 
 .card-seccion{
@@ -233,10 +237,6 @@ img{
     letter-spacing: 1px;
     padding: 10px 0;
     color: #737473;
-}
-
-.card-services .card-info-services h3{
-
 }
 
 .card-services .card-imagen-services .fa-video{
@@ -661,7 +661,6 @@ details ul li{
     .presentacion button{
         font-size: 18px;
     }
-
     /*Carta tipo de asistencia*/
     .card p, .card a{
         font-size: 18px;
@@ -796,6 +795,7 @@ details ul li{
     .card-seccion{
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .contenedor{
         max-width: 1200px;
         margin: auto;
@@ -816,5 +816,11 @@ details ul li{
         display: flex;
         column-gap: 20px;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .presentacion{
+        margin-left: -200px;
     }
 }
