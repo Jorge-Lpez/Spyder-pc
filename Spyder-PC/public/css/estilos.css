@@ -148,10 +148,10 @@ img{
     text-align: center;
     border: none;
     margin-bottom: 10px;
-    color: var(--whiteTexto);
+    color: white;
     outline: none;
-    background-color: var(--redMedio);
-    border: 2px solid var(--redMedio);
+    background-color: var(--redFuerte);
+    border: 2px solid var(--redFuerte);
     border-radius: 8px;
 }
 
@@ -201,15 +201,15 @@ img{
     text-align: center;
     text-decoration: none;
     width: 200px;
-    color: var(--whiteTexto);
+    color: var(--blackTexto);
     margin: 10px 0;
-    background-color: var(--blueHover);
+    background-color: var(--blueFuerte);
     border-radius: 6px;
     transition: all .3s ease;
 }
 
 .card a:hover{
-    background-color: var(--blueMediano);
+    background-color: var(--blueHover);
     color: var(--blackTexto);
 }
 
