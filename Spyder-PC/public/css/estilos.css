@@ -16,18 +16,27 @@ html{
     --hoverEnlace : #DAD6D6; 
     --blackTexto: black;
     --botonPrincipal : #00A55D;
-    --grayInformativo : white;
     --cardServices : #E9F6FF;
     --footer : #113355;
-    --grayMovil : #A5A3A3;
     --serviceCard : rgb(192, 225, 240);
     /*Nuevos colores*/
     --colorCrimson : #F63636;
     --whiteTexto : white;
-
     /*Letras*/
     --robotoPrincipal : "Roboto", sans-serif;
 
+    /*Color rojo*/
+    --redFuerte : #dc143c;
+    --redMedio : #e95159;
+    --redBajo : #f37778;
+    --redOpaco : #fa9b98;
+
+    /*Color Blue*/
+    --blueFuerte : #0079f0;
+    --blueMediano : #5c8df3;
+    --blueBajo : #86a3f6;
+    --blueOpaco : #a7b9f9;
+    --blueHover : #3488ff;
 }
 
 img{
@@ -53,8 +62,7 @@ img{
 }
 
 .menu.stycky{
-    background-color: var(--colorCrimson);
-
+    background-color: var(--redFuerte);
 }
 
 .menu.stycky .logo{
@@ -142,8 +150,9 @@ img{
     margin-bottom: 10px;
     color: var(--whiteTexto);
     outline: none;
-    background-color: var(--grayPrincipal);
-    border: 2px solid var(--grayPrincipal);
+    background-color: var(--redMedio);
+    border: 2px solid var(--redMedio);
+    border-radius: 8px;
 }
 
 .presentacion button:hover{
@@ -168,8 +177,7 @@ img{
 
 .card{
     padding: 15px;
-    border: 1px solid var(--hoverEnlace);
-    background-color: var(--grayInformativo);
+    border: 1px solid var(--blueOpaco);
     color: var(--blackTexto);
     border-radius: 10px;
 }
@@ -195,18 +203,20 @@ img{
     width: 200px;
     color: var(--whiteTexto);
     margin: 10px 0;
-    background-color: var(--botonPrincipal);
-    border: 4px solid var(--botonPrincipal);
+    background-color: var(--blueHover);
+    border-radius: 6px;
+    transition: all .3s ease;
 }
 
 .card a:hover{
-    background: none;
+    background-color: var(--blueMediano);
     color: var(--blackTexto);
 }
 
+
 /*estilos card services*/
 .services{
-    background-color: var(--serviceCard);
+    background-color: #111;
     padding-bottom: 40px;
     font-family: var(--robotoPrincipal);
 }
@@ -214,18 +224,21 @@ img{
 .services h2{
     letter-spacing: 1px;
     padding: 20px 0;
+    color: white;
     text-align: center;
 }
 
 .card-services{
     text-align: center;
     margin-bottom: 30px;
+    background-color: #222;
+    padding: 20px;
 }
 
 .card-services h3{
     letter-spacing: 1px;
     padding: 10px 0;
-    color: #666867;
+    color: white;
 }
 
 .card-services a{
@@ -236,26 +249,30 @@ img{
 .card-services .card-info-services p{
     letter-spacing: 1px;
     padding: 10px 0;
-    color: #737473;
+    color: white;
 }
 
 .card-services .card-imagen-services .fa-video{
-    color: blue;
+    /*color: blue;*/
+    color: var(--redFuerte);
     font-size: 36px;
 }
 
 .card-services .card-imagen-services .fa-tools{
-    color: #E39620;
+    /*color: #E39620;*/
+    color: var(--redFuerte);
     font-size: 36px;
 }
 
 .card-services .card-imagen-services .fa-network-wired{
-    color: #C15216;
+    /*color: #C15216;*/
+    color: var(--redFuerte);
     font-size: 36px;
 }
 
 .card-services .card-imagen-services .fa-memory{
-    color: green;
+    /*color: green;*/
+    color: var(--redFuerte);
     font-size: 36px;
 }
 
@@ -445,14 +462,13 @@ form input[type="submit"]{
     border: none;
     outline: none;
     color: var(--whiteTexto);
-    border: 1px solid var(--grayInformativo);
-    background-color: var(--grayPrincipal);
-    border: 4px solid var(--grayPrincipal);
+    background-color: var(--blueFuerte);
+    border-radius: 16px;
     margin-bottom: 20px;
 }
 
 form input[type="submit"]:hover{
-    background: none;
+    background: var(--blueHover);
     color: var(--blackTexto);
 }
 
@@ -496,11 +512,23 @@ form input[type="submit"]:hover{
 .terminos-condiciones .terminos-iconos div i{
     margin-right: 10px;
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 40px;
 }
 
 .terminos-condiciones .terminos-iconos div p{
- letter-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.terminos .terminos-iconos .fa-stopwatch{
+    color: var(--redFuerte);
+}
+
+.terminos .terminos-iconos .fa-envelope-open-text{
+    color: #006CAA;
+}
+
+.terminos .terminos-iconos .fa-user-alt{
+    color: var(--redMedio);
 }
 
 
