@@ -423,6 +423,10 @@ img{
     text-align: center;
 }
 
+form{
+    margin-bottom: 60px;
+}
+
 .items-form{
     display: flex;
     flex-direction: column;
@@ -466,7 +470,6 @@ form input[type="submit"]{
     color: var(--whiteTexto);
     background-color: var(--blueFuerte);
     border-radius: 16px;
-    margin-bottom: 20px;
 }
 
 form input[type="submit"]:hover{
@@ -603,10 +606,6 @@ details ul li{
 
     .img-presentacion{
         margin-bottom: 20px;
-    }
-
-    .logo{
-       /* padding: 20px;*/
     }
 
     .menu-btn  i.active::before{
@@ -815,7 +814,7 @@ details ul li{
     
     .img-form{
         flex: 1;
-        margin-left: 40px;
+        margin-left: 60px;
     }
 
     .terminos-condiciones .terminos-iconos div{
@@ -834,6 +833,10 @@ details ul li{
     /*Responsive tipo servicio*/
     .card-seccion .card{
         width: calc( 50% - 20px);
+    }
+
+    form{
+        margin-bottom: 20px;
     }
 }
 
