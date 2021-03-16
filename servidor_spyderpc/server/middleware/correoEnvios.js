@@ -8,19 +8,49 @@ async function enviarCorreo(req, res){
     let transporter = nodemailer.createTransport({
         service: "gmail",
         auth:{
-            user: process.env.CORREO,
-            pass: process.env.CONTRASENA
+            user: "pcspyder86@gmail.com",
+            pass: "abascal12345"
         }
     });
 
+    /*
+    user: process.env.CORREO,
+            pass: process.env.CONTRASENA
+    */
+
+    const htmlMensaje = `
+        <h1>Datos cliente servicio</h1>
+
+        <p style="color:red">
+             Solicitud de servicio por: <span>${nombre} ${apellido}</span>
+        </p>
+
+        <table style="text-align: center">
+            <tr>
+                <th style="padding:10px">Nombre</th>
+                <th style="padding:10px">Telefono</th>
+                <th style="padding:10px">Correo</th>
+                <th style="padding:10px">Problema</th>
+            </tr>
+            <tr>
+                <td style="padding:10px">${nombre} ${apellido}</td>
+                <td style="padding:10px">${telefono}</td>
+                <td style="padding:10px">${correo}</td>
+                <td style="padding:10px">${mensaje}</td>
+            </tr>
+        </table>
+
+        <p>Solicitud generada desde la pagina web.</p>
+        <p>Spyder PC & MAC.</p>
+    `;
 
     let message = {
         from: "Spyder Pc",
-        to: [correo, "pcspyder86@gmail.com"],
+        to: "pcspyder86@gmail.com",
         subject: "Spyder PC Reparaciones",
-        text: `Hola buenas tardes ${nombre} ${apellido}, \nHemos recibido tu correo, pronto un ingeniero se comunicara contigo para darle seguimiento a tu problema.\n\nNombre: ${nombre} ${apellido}\nTelefono: ${telefono}\nCorreo: ${correo}\nDescripción Problema: ${mensaje}\n\nSaludos Buen Día.`
+        text: `Hola`,
+        html: htmlMensaje
     };
-
 
    transporter.sendMail(message, (err, info) => {
         if(err){
