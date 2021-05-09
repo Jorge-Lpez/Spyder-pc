@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+require('dotenv').config();
 
 async function enviarCorreo(req, res){
     
@@ -8,8 +9,8 @@ async function enviarCorreo(req, res){
     let transporter = nodemailer.createTransport({
         service: "gmail",
         auth:{
-            user: "pcspyder86@gmail.com",
-            pass: "abascal12345"
+            user: process.env.USERNAME,
+            pass: process.env.PASSWORD
         }
     });
 
