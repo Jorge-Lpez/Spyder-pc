@@ -65,7 +65,6 @@ async function submitContacto(e){
     //console.log(datos);
     formulario.reset();
     await enviandoCorreo(datos);
-    reiniciarDatos();
 }
 
 function obtenerDatos(e){
@@ -149,7 +148,7 @@ async function enviandoCorreo(datos){
             text: 'Pronto nos contactaremos contigo.',
             confirmButtonText: `Aceptar`
         });
-        //const url = `http://localhost:4000/correo`;
+        //const url = `https://spyder-pc.herokuapp.com/correo`;
         const url = `https://spyder-pc.herokuapp.com/correo`;
         const resultado =  await axios.post(url, { datos });
     } catch (error) {
