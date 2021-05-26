@@ -235,6 +235,24 @@ img{
     margin-bottom: 30px;
     background-color: #222;
     padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-services .box{
+    transition: all 0.3s ease;
+}
+
+.card-services:hover{
+    background-color: var(--redFuerte);
+}
+
+.card-services:hover .box{
+    transform: scale(1.05);
+}
+
+.card-services:hover .box i{
+    color: white;
 }
 
 .card-services h3{

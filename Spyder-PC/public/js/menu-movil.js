@@ -14,6 +14,9 @@ const iconoClose = document.querySelector(".menu-btn i");
 //Contactanos boton principal
 const contactanosBtn = document.querySelector("#contactanos-button");
 
+//variables para dirigir a servicios pages
+const servicesCamara = document.querySelector("#camaras-services");
+
 //Variables datos objeto
 const datos = {
     nombre: "",
@@ -29,6 +32,7 @@ function MyApp(){
 
     //Evento submit en formulario
     formulario.addEventListener("submit", submitContacto);
+
     /*Evento en los input*/
     nombreInput.addEventListener("input", obtenerDatos);
     apellidoInput.addEventListener("input", obtenerDatos);
@@ -37,6 +41,11 @@ function MyApp(){
     mensajeInput.addEventListener("input", obtenerDatos);
 
     window.addEventListener("scroll", cambiarColor);
+
+    /* Dirijiendo a page services */
+    servicesCamara.addEventListener("click", () => {
+        window.location.href = "servicios.html";
+    });
 
     //Funcion boton contactos principal
     contactanosBtn.addEventListener("click", function(){

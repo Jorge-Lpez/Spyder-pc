@@ -1,0 +1,88 @@
+.services-general{
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+
+img{
+    width: 100%;
+}
+
+.services-general h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.services-general .flex-services{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.flex-services .column{
+    flex: 1;
+}
+
+.flex-services .right{
+    padding: 10px;
+}
+
+.flex-services .right p{
+    padding: 15px 0;
+}
+
+.flex-services .right ul{
+    margin-left: 20px;
+}
+
+.flex-services .right ul li{
+    padding: 5px 0;
+}
+
+.flex-services .left{
+    padding: 10px;
+}
+
+/* Inicio servicios incluidos */
+
+.product-camaras{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+.services-ofrecidos{
+    border: 2px solid #eee;
+}
+
+.services-ofrecidos .right{
+    padding: 10px;
+}
+
+.services-ofrecidos .right h3{
+    padding: 10px 0;
+}
+
+.services-ofrecidos .right p{
+    padding: 10px 0;
+}
+
+.services-ofrecidos .right button{
+    border: 2px solid;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.services-ofrecidos .right button:hover{
+    background: none;
+    color: black;
+}
+
+
+
+
