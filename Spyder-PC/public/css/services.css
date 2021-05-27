@@ -49,8 +49,10 @@ img{
 .product-camaras{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .services-ofrecidos{
@@ -83,6 +85,17 @@ img{
     color: black;
 }
 
+@media screen and (max-width: 970px){
 
+    .services-general .flex-services{
+        flex-direction: column;
+        border: 1px solid green;
+    }
 
+}
 
+@media screen and (max-width: 420px){
+    .product-camaras{
+        column-gap: 0;
+    }
+}
