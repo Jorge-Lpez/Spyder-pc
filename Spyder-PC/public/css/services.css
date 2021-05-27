@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+
+html{
+    box-sizing: inherit;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 .services-general{
     padding-top: 100px;
     margin-bottom: 40px;
@@ -12,6 +23,8 @@ img{
     padding: 10px;
     font-weight: 700;
     margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
 }
 
 .services-general .flex-services{
@@ -28,8 +41,15 @@ img{
     padding: 10px;
 }
 
+.flex-services .right h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
 .flex-services .right p{
     padding: 15px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
 }
 
 .flex-services .right ul{
@@ -38,6 +58,8 @@ img{
 
 .flex-services .right ul li{
     padding: 5px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
 }
 
 .flex-services .left{
@@ -56,7 +78,7 @@ img{
 }
 
 .services-ofrecidos{
-    border: 2px solid #eee;
+    border: 6px solid #eee;
 }
 
 .services-ofrecidos .right{
@@ -65,10 +87,14 @@ img{
 
 .services-ofrecidos .right h3{
     padding: 10px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
 }
 
 .services-ofrecidos .right p{
     padding: 10px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
 }
 
 .services-ofrecidos .right button{
@@ -78,6 +104,8 @@ img{
     font-weight: 700;
     background-color: black;
     border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
 }
 
 .services-ofrecidos .right button:hover{
@@ -89,13 +117,50 @@ img{
 
     .services-general .flex-services{
         flex-direction: column;
-        border: 1px solid green;
     }
 
+    .flex-services .left{
+        text-align: center;
+    }
+
+    .flex-services .left img{
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
+    }
+    /**/
+    .flex-services .right h3{
+        font-size: 16px;
+    }
+    .flex-services .right p{
+        font-size: 16px;
+    }
+    .flex-services .right ul li{
+        font-size: 16px;
+    }
+    /*Estilos card*/
+    .services-ofrecidos .right h3{
+        font-size: 16px;
+    }
+
+    .services-ofrecidos .right p{
+        font-size: 16px;
+    }
+
+    .services-ofrecidos .right button{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 420px){
     .product-camaras{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         column-gap: 0;
+    }
+
+    .flex-services .left img{
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
     }
 }

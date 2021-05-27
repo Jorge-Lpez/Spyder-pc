@@ -6,11 +6,6 @@ const telefonoInput = document.querySelector("#telefono");
 const correoInput = document.querySelector("#correo");
 const mensajeInput = document.querySelector("#mensaje");
 
-//Variables para menu responsive
-const menuBtn = document.querySelectorAll(".menu-btn");
-const menuContent = document.querySelector(".menu-content");
-const iconoClose = document.querySelector(".menu-btn i");
-
 //Contactanos boton principal
 const contactanosBtn = document.querySelector("#contactanos-button");
 
@@ -25,7 +20,7 @@ const datos = {
     correo: "",
     mensaje: ""
 };
-
+  
 MyApp();
 
 function MyApp(){
@@ -39,8 +34,6 @@ function MyApp(){
     telefonoInput.addEventListener("input", obtenerDatos);
     correoInput.addEventListener("input", obtenerDatos);
     mensajeInput.addEventListener("input", obtenerDatos);
-
-    window.addEventListener("scroll", cambiarColor);
 
     /* Dirijiendo a page services */
     servicesCamara.addEventListener("click", () => {
@@ -56,11 +49,6 @@ function MyApp(){
 
     //Funcion animaciones con gulp
     mostrarAnimacione();
-
-    //Evento para mostrar menu
-    menuBtn.forEach(menuTodos => {
-        menuTodos.addEventListener("click", mostarMenu); 
-    });
 }
 
 /*Validar formulario y obtener datos*/
@@ -98,18 +86,6 @@ function reiniciarDatos(){
 }
 /*Fin validacion Formulario*/
 
-/*Codigo menu responsive*/
-function mostarMenu(){
-    if(menuContent.classList.contains("active")){
-        menuContent.classList.remove("active");
-        iconoClose.classList.remove("active");
-    }else{
-        menuContent.classList.add("active");
-        iconoClose.classList.add("active");
-    }
-}
-
-
 /*Codigo animaciones con gulp */
 function mostrarAnimacione(){
     gsap.to(".card3", {duration: 0, x:3000});
@@ -137,16 +113,6 @@ let swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
 });
-
-/*Cambiar color del menu*/
-
-function cambiarColor(){
-    if(window.scrollY > 20){
-        document.querySelector(".menu").classList.add("stycky");
-    }else{
-        document.querySelector(".menu").classList.remove("stycky");
-    }
-}
 
 
 async function enviandoCorreo(datos){
