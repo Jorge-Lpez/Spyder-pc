@@ -9,7 +9,7 @@ html{
     box-sizing: border-box;
 }
 
-.services-general{
+.services-general, .contenido-mantenimiento{
     padding-top: 100px;
     margin-bottom: 40px;
 }
@@ -111,6 +111,167 @@ img{
 .services-ofrecidos .right button:hover{
     background: none;
     color: black;
+}
+
+/* Estilos contenido page servicios mantenimiento laptop*/
+.contenido-mantenimiento h2{
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.contenido-mantenimiento .grid-services-compus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.grid-services-compus .child-grid{
+    text-align: center;
+    width: 50%;
+}
+
+.grid-services-compus .child-grid .caja{
+    margin: 0 auto;
+    width: 300px;
+}
+
+.grid-services-compus .child-grid h3{
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.grid-services-compus .child-grid p{
+    padding: 15px 0;
+    letter-spacing: 1px;
+    color: rgba(167, 167, 167);
+}
+
+.grid-services-compus .child-grid i{
+    padding: 10px 0;
+    font-size: 50px;
+}
+
+/*Servicios para empresas*/
+
+.services-empresa{
+    background-color: black;
+    color: white;
+}
+
+.empresa-contenido{
+    display: flex;
+    padding: 40px 0;
+}
+
+.empresa-contenido .column{
+    flex: 1;
+    padding: 10px;
+}
+
+.empresa-contenido .info h2{
+    padding: 10px 0px;
+}
+
+.empresa-contenido .info h3{
+    padding: 10px 0px;
+    font-size: 34px;
+}
+
+.empresa-contenido .info p{
+    letter-spacing: 1px;
+    padding: 10px 0px;
+}
+
+.empresa-contenido .info button{
+    border: 2px solid crimson;
+    border-radius: 6px;
+    background-color: crimson;
+    padding: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.empresa-contenido .info button:hover{
+    background: none;
+}
+
+/* Diseño armado de pc*/
+
+.arma-pc{
+    padding: 0px 0 40px 0;
+}
+
+.arma-pc h2{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.flex-arma{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+}
+
+.flex-arma .flex-uno, .flex-arma .flex-tres{
+    width: calc( 25% );
+}
+
+/*Imagen flex dos*/
+.flex-arma .flex-dos{
+    width: calc(50%);
+    text-align: center;
+}
+
+.flex-dos img{
+    width: 320px;
+    height: 270px;
+    object-fit: cover;
+}
+
+/*Viñetas flex uno y tres*/
+.flex-uno .info-pc, .flex-tres .info-pc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.flex-uno{
+    text-align: right;
+}
+
+.flex-tres .info-pc .invertir-text{
+    order: 2;
+}
+
+.flex-tres .info-pc .invertir-icon{
+    order: 1;
+}
+
+.info-pc:last-of-type{
+    margin-bottom: 20px;
+}
+
+.info-pc div a{
+    font-size: 24px;
+    text-decoration: none;
+    color: blue;
+    display: block;
+    padding: 5px 0;
+}
+
+.info-pc div p{
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+.info-pc div a i{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 34px;
 }
 
 @media screen and (max-width: 970px){
