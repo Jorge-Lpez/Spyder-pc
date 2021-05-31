@@ -12,7 +12,8 @@ const contactanosBtn = document.querySelector("#contactanos-button");
 //variables para dirigir a servicios pages
 const servicesCamara = document.querySelector("#camaras-services");
 const reparacionCompus = document.querySelector("#reparacion-compus");
-
+const redservices = document.querySelector("#red-services");
+const proyectoservices = document.querySelector("#proyectos-services");
 //Variables datos objeto
 const datos = {
     nombre: "",
@@ -43,6 +44,14 @@ function MyApp(){
 
     reparacionCompus.addEventListener("click", () => {
         window.location.href = "reparacion.html";
+    });
+
+    redservices.addEventListener("click", () => {
+        window.location.href = "red.html";
+    });
+
+    proyectoservices.addEventListener("click", () => {
+        window.location.href = "proyectos.html";
     });
 
     //Funcion boton contactos principal

@@ -113,11 +113,16 @@ img{
     color: black;
 }
 
+
+
+
+
 /* Estilos contenido page servicios mantenimiento laptop*/
 .contenido-mantenimiento h2{
     text-align: center;
     padding: 10px 0;
     margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
 }
 
 .contenido-mantenimiento .grid-services-compus{
@@ -130,6 +135,8 @@ img{
 .grid-services-compus .child-grid{
     text-align: center;
     width: 50%;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
 }
 
 .grid-services-compus .child-grid .caja{
@@ -138,7 +145,7 @@ img{
 }
 
 .grid-services-compus .child-grid h3{
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 0;
 }
 
@@ -163,6 +170,7 @@ img{
 .empresa-contenido{
     display: flex;
     padding: 40px 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .empresa-contenido .column{
@@ -182,6 +190,7 @@ img{
 .empresa-contenido .info p{
     letter-spacing: 1px;
     padding: 10px 0px;
+    font-size: 18px;
 }
 
 .empresa-contenido .info button{
@@ -191,6 +200,8 @@ img{
     padding: 20px;
     color: white;
     margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
 }
 
 .empresa-contenido .info button:hover{
@@ -206,6 +217,7 @@ img{
 .arma-pc h2{
     text-align: center;
     padding: 40px 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .flex-arma{
@@ -213,6 +225,8 @@ img{
     flex-wrap: wrap;
     align-items: center;
     align-self: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
 }
 
 .flex-arma .flex-uno, .flex-arma .flex-tres{
@@ -256,7 +270,7 @@ img{
 }
 
 .info-pc div a{
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
     color: blue;
     display: block;
@@ -309,6 +323,36 @@ img{
     }
 
     .services-ofrecidos .right button{
+        font-size: 16px;
+    }
+
+    /*Tamño letras seccion reparar*/
+    .grid-services-compus .child-grid{
+        font-size: 16px;
+    }
+
+    .grid-services-compus .child-grid h3{
+        font-size: 16px;
+    }
+
+    /*Estilos para empresas reparacion*/
+    .empresa-contenido .info h2{
+        font-size: 18px;
+    }
+    .empresa-contenido .info h3{
+        font-size: 28px;
+    }
+    .empresa-contenido .info p{
+        font-size: 16px;
+    }
+    .empresa-contenido .info button{
+        font-size: 16px;
+    }
+    /*Estilos arma pc*/
+    .flex-arma{
+        font-size: 16px;
+    }
+    .info-pc div a{
         font-size: 16px;
     }
 }
