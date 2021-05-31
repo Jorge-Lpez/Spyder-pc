@@ -313,6 +313,34 @@ img{
     }
 }
 
+@media screen and (max-width: 740px){
+    /*Cuadro de informacion principal*/
+    .grid-services-compus .child-grid{
+        width: 100%;
+    }
+    /*Servicios para empresas*/
+    .empresa-contenido{
+        flex-direction: column;
+    }
+
+    .grid-services-compus .child-grid .caja{
+        width: 100%;
+    }
+
+    /*Ultima section*/
+    .flex-arma .flex-uno, .flex-arma .flex-tres{
+        margin: 0 auto;
+        width: 70%;
+    }
+    .flex-arma .flex-dos{
+        width: 100%;
+    }
+    .flex-dos img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 420px){
     .product-camaras{
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -323,5 +351,10 @@ img{
         width: 200px;
         height: 200px;
         object-fit: contain;
+    }
+
+    /*Noti con imagen inmedio*/
+    .flex-arma .flex-uno, .flex-arma .flex-tres{
+        width: 100%;
     }
 }
