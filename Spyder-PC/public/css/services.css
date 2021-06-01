@@ -9,7 +9,8 @@ html{
     box-sizing: border-box;
 }
 
-.services-general, .contenido-mantenimiento{
+.services-general, .contenido-mantenimiento, 
+.red-services, .proyectos-services{
     padding-top: 100px;
     margin-bottom: 40px;
 }
@@ -18,7 +19,9 @@ img{
     width: 100%;
 }
 
-.services-general h2{
+.services-general h2,
+.red-services h2,
+.proyectos-services h2{
     text-align: center;
     padding: 10px;
     font-weight: 700;
@@ -287,6 +290,12 @@ img{
     padding-right: 15px;
     font-size: 34px;
 }
+
+
+
+/*Page redes*/
+
+
 
 @media screen and (max-width: 970px){
 
