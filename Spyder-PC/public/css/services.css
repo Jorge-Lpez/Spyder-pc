@@ -20,7 +20,7 @@ img{
 }
 
 .services-general h2,
-.red-services h2,
+.red-services .title,
 .proyectos-services h2{
     text-align: center;
     padding: 10px;
@@ -291,11 +291,177 @@ img{
     font-size: 34px;
 }
 
-
-
 /*Page redes*/
+.red-services .red-principal{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.red-principal .red-img img{
+    width: 100%;
+}
+
+.red-principal .red-info{
+    padding-left: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.red-principal .red-info h2{
+    padding: 10px 0;
+}
+
+.red-principal .red-info p{
+    padding: 10px 0;
+    font-size: 18px;
+}
 
 
+.red-principal .red-info div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.red-principal .red-info div a{
+    display: block;
+    padding: 5px 0;
+    width: 250px;
+    color: blue;
+    cursor: pointer;
+}
+
+.red-principal .red-info div button{
+    padding: 10px;
+    border: 2px solid blue;
+    color: white;
+    background-color: blue;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.red-principal .red-info div button:hover{
+    background: none;
+    color: black;
+}
+
+/*---*/
+.red-cuerpo{
+    margin-bottom: 40px;
+}
+
+.red-cuerpo .red-cuerpo-principal{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.red-cuerpo .red-cuerpo-principal h3{
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.red-cuerpo .red-cuerpo-principal p{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.red-cuerpo .red-cuerpo-principal button{
+    padding: 10px;
+    border: 2px solid blue;
+    background: blue;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+.red-cuerpo .red-cuerpo-principal button:hover{
+    background: none;
+    color: black;
+}
+
+.red-cuerpo .red-cuerpo-inferior{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+}
+
+.red-cuerpo-inferior .inferior-cuerpo .info-inferior p{
+    padding: 5px;
+}
+
+.red-cuerpo-inferior .inferior-cuerpo i{
+    font-size: 40px;
+    padding: 15px 0;
+    color: blue;
+}
+
+
+.red-cuerpo .red-cuerpo-inferior .inferior-cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/**/
+.red-card-flex .card-items-flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-items-flex .red-card-left{
+    flex: 45%;
+}
+
+.card-items-flex .card-img{
+    flex: 55%;
+}
+
+.card-items-flex .left{
+    order: 1;
+}
+
+.card-items-flex .red-card-left{
+    padding: 20px;
+}
+
+.card-items-flex .red-card-left h3{
+    padding-bottom: 20px;
+}
+
+.card-items-flex .red-card-left p{
+    padding: 10px 0;
+}
+
+.card-items-flex .red-card-left button{
+    background: rgba(255,255,255, .1);
+    border: 2px solid blue;
+    color: blue;
+    font-size: 18px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.card-items-flex .red-card-left button:hover{
+    background: blue;
+    color: white;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .red-services .red-principal{
+        flex-direction: column;
+    }
+
+    .red-principal .red-info{
+        padding: 0;
+    }
+
+}
 
 @media screen and (max-width: 970px){
 
@@ -364,6 +530,37 @@ img{
     .info-pc div a{
         font-size: 16px;
     }
+
+    /*Estilos page red*/
+
+    .red-principal .red-info p{
+        font-size: 16px;
+    }
+
+    .red-principal .red-info div button{
+        font-size: 16px;
+    }
+
+    .red-principal .red-info div a{
+        font-size: 14px;
+    }
+
+    .red-cuerpo .red-cuerpo-principal h3{
+        font-size: 16px;
+    }
+
+    .red-cuerpo .red-cuerpo-principal p{
+        font-size: 16px;
+    }
+
+    .red-cuerpo .red-cuerpo-principal button{
+        font-size: 16px;
+    }
+
+    .red-cuerpo-inferior .inferior-cuerpo .info-inferior p{
+        font-size: 14px;
+    }
+    
 }
 
 @media screen and (max-width: 740px){
@@ -391,6 +588,28 @@ img{
     .flex-dos img{
         width: 100%;
         height: 100%;
+    }
+
+
+    /* redes section */
+
+    .red-principal .red-info div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .red-principal .red-info div a{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .red-cuerpo .red-cuerpo-inferior{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .red-cuerpo .red-cuerpo-inferior .inferior-cuerpo{
+        flex-direction: column;
     }
 }
 
