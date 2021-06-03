@@ -10,7 +10,7 @@ html{
 }
 
 .services-general, .contenido-mantenimiento, 
-.red-services, .proyectos-services{
+.red-services{
     padding-top: 100px;
     margin-bottom: 40px;
 }
@@ -20,8 +20,7 @@ img{
 }
 
 .services-general h2,
-.red-services .title,
-.proyectos-services h2{
+.red-services .title{
     text-align: center;
     padding: 10px;
     font-weight: 700;
@@ -450,6 +449,103 @@ img{
     color: white;
 }
 
+/*Proyectos principal*/
+.banner-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-image: url("../img/tecnologia-laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.banner-principal .texto-informativo{
+    border-radius: 16px;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    background: rgba(0, 0,0, .7);
+}
+
+.banner-principal .texto-informativo h2{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.banner-principal .texto-informativo p{
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.banner-principal .texto-informativo button{
+    padding: 10px;
+    border: 4px solid crimson;
+    background-color: crimson;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px;
+}
+
+.banner-principal .texto-informativo button:hover{
+    background: none;
+}
+
+
+/*   */
+
+.flex-proyectos{
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.flex-proyectos .left{
+    text-align: center;
+    flex: 1;
+}
+
+.flex-proyectos .left .titulo{
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.flex-proyectos .left .info{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.flex-proyectos .left .lema{
+    font-size: 18px;
+    color: blue;
+    padding: 10px 0;
+}
+
+.flex-proyectos .right{
+    flex: 1;
+}
+
+/* con-proyectos */
+
+.con-proyectos{
+    background: black;
+    color: white;
+}
+
+.con-proyectos .left{
+    order: 2;
+}
+
+.con-proyectos .right{
+    order: 1;
+}
 
 @media screen and (max-width: 900px) {
 
@@ -559,6 +655,23 @@ img{
 
     .red-cuerpo-inferior .inferior-cuerpo .info-inferior p{
         font-size: 14px;
+    }
+
+    /*Proyectos*/
+    .flex-proyectos{
+        flex-direction: column;
+    }
+
+    .flex-proyectos .left .titulo{
+        font-size: 20px;
+    }
+
+    .flex-proyectos .left .info{
+        font-size: 16px;
+    }
+        
+    .flex-proyectos .left .lema{
+        font-size: 16px;
     }
     
 }
